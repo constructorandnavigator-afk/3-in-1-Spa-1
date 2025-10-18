@@ -1,18 +1,16 @@
 const CACHE_NAME = 'spa-cache-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/KissVaultLogo.png',
-  '/Mindful_Needs_Digital_Spa_Logo.png',
-  '/logobriga.png',
-  '/LogoLjubav.png',
-  '/LogoRiskTrack.png',
-  '/worry.html',
-  '/Love.html',
-  '/gambling.html',
-  '/style.css' // ako koristiš eksterni CSS fajl, ovde ga dodaj
+  'index.html',
+  'manifest.json',
+  'Mindful_Needs_Digital_Spa_Logo.png',
+  'logobriga.png',
+  'LogoLjubav.png',
+  'LogoRiskTrack.png',
+  'worry.html',
+  'Love.html',
+  'gambling.html'
 ];
+
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -43,3 +41,4 @@ self.addEventListener('fetch', (event) => {
       })
   );
 });
+
